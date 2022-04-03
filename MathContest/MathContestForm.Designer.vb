@@ -22,6 +22,7 @@ Partial Class MathContestForm
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.ClearButton = New System.Windows.Forms.Button()
         Me.AgeTextBox = New System.Windows.Forms.TextBox()
@@ -34,19 +35,21 @@ Partial Class MathContestForm
         Me.SubtractionRadioButton = New System.Windows.Forms.RadioButton()
         Me.DivisionRadioButton = New System.Windows.Forms.RadioButton()
         Me.AdditionRadioButton = New System.Windows.Forms.RadioButton()
-        Me.ExitButton = New System.Windows.Forms.Button()
-        Me.GroupBox2 = New System.Windows.Forms.GroupBox()
-        Me.SecondNumberLabel = New System.Windows.Forms.Label()
-        Me.FirstNumberLabel = New System.Windows.Forms.Label()
-        Me.AnswerBox = New System.Windows.Forms.TextBox()
-        Me.Label6 = New System.Windows.Forms.Label()
-        Me.MathLabel = New System.Windows.Forms.Label()
-        Me.SubmitButton = New System.Windows.Forms.Button()
-        Me.SummaryButton = New System.Windows.Forms.Button()
         Me.ProblemTypeGroupBox = New System.Windows.Forms.GroupBox()
+        Me.MathContestToolTip = New System.Windows.Forms.ToolTip(Me.components)
+        Me.ExitButton = New System.Windows.Forms.Button()
+        Me.SummaryButton = New System.Windows.Forms.Button()
+        Me.SubmitButton = New System.Windows.Forms.Button()
+        Me.OperationLabel = New System.Windows.Forms.Label()
+        Me.Label6 = New System.Windows.Forms.Label()
+        Me.AnswerBox = New System.Windows.Forms.TextBox()
+        Me.FirstNumberLabel = New System.Windows.Forms.Label()
+        Me.SecondNumberLabel = New System.Windows.Forms.Label()
+        Me.AnswerLabel = New System.Windows.Forms.Label()
+        Me.GroupBox2 = New System.Windows.Forms.GroupBox()
         Me.GroupBox1.SuspendLayout()
-        Me.GroupBox2.SuspendLayout()
         Me.ProblemTypeGroupBox.SuspendLayout()
+        Me.GroupBox2.SuspendLayout()
         Me.SuspendLayout()
         '
         'GroupBox1
@@ -165,102 +168,6 @@ Partial Class MathContestForm
         Me.AdditionRadioButton.Text = "Addition"
         Me.AdditionRadioButton.UseVisualStyleBackColor = True
         '
-        'ExitButton
-        '
-        Me.ExitButton.Location = New System.Drawing.Point(22, 382)
-        Me.ExitButton.Name = "ExitButton"
-        Me.ExitButton.Size = New System.Drawing.Size(420, 63)
-        Me.ExitButton.TabIndex = 4
-        Me.ExitButton.Text = "Finish and E&xit"
-        Me.ExitButton.UseVisualStyleBackColor = True
-        '
-        'GroupBox2
-        '
-        Me.GroupBox2.Controls.Add(Me.SecondNumberLabel)
-        Me.GroupBox2.Controls.Add(Me.FirstNumberLabel)
-        Me.GroupBox2.Controls.Add(Me.AnswerBox)
-        Me.GroupBox2.Controls.Add(Me.Label6)
-        Me.GroupBox2.Controls.Add(Me.MathLabel)
-        Me.GroupBox2.Controls.Add(Me.SubmitButton)
-        Me.GroupBox2.Controls.Add(Me.SummaryButton)
-        Me.GroupBox2.Controls.Add(Me.ExitButton)
-        Me.GroupBox2.Location = New System.Drawing.Point(495, 12)
-        Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Size = New System.Drawing.Size(461, 462)
-        Me.GroupBox2.TabIndex = 1
-        Me.GroupBox2.TabStop = False
-        Me.GroupBox2.Text = "Math Problem"
-        '
-        'SecondNumberLabel
-        '
-        Me.SecondNumberLabel.AutoSize = True
-        Me.SecondNumberLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.SecondNumberLabel.Location = New System.Drawing.Point(167, 87)
-        Me.SecondNumberLabel.MinimumSize = New System.Drawing.Size(60, 0)
-        Me.SecondNumberLabel.Name = "SecondNumberLabel"
-        Me.SecondNumberLabel.Size = New System.Drawing.Size(60, 29)
-        Me.SecondNumberLabel.TabIndex = 14
-        Me.SecondNumberLabel.Text = "0"
-        Me.SecondNumberLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'FirstNumberLabel
-        '
-        Me.FirstNumberLabel.AutoSize = True
-        Me.FirstNumberLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.FirstNumberLabel.Location = New System.Drawing.Point(34, 87)
-        Me.FirstNumberLabel.MinimumSize = New System.Drawing.Size(60, 0)
-        Me.FirstNumberLabel.Name = "FirstNumberLabel"
-        Me.FirstNumberLabel.Size = New System.Drawing.Size(60, 29)
-        Me.FirstNumberLabel.TabIndex = 13
-        Me.FirstNumberLabel.Text = "0"
-        Me.FirstNumberLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'AnswerBox
-        '
-        Me.AnswerBox.Location = New System.Drawing.Point(325, 87)
-        Me.AnswerBox.Name = "AnswerBox"
-        Me.AnswerBox.Size = New System.Drawing.Size(91, 31)
-        Me.AnswerBox.TabIndex = 1
-        Me.AnswerBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
-        '
-        'Label6
-        '
-        Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(249, 87)
-        Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(24, 25)
-        Me.Label6.TabIndex = 11
-        Me.Label6.Text = "="
-        '
-        'MathLabel
-        '
-        Me.MathLabel.AutoSize = True
-        Me.MathLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.MathLabel.Location = New System.Drawing.Point(121, 87)
-        Me.MathLabel.Name = "MathLabel"
-        Me.MathLabel.Size = New System.Drawing.Size(27, 29)
-        Me.MathLabel.TabIndex = 9
-        Me.MathLabel.Text = "+"
-        Me.MathLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'SubmitButton
-        '
-        Me.SubmitButton.Location = New System.Drawing.Point(22, 227)
-        Me.SubmitButton.Name = "SubmitButton"
-        Me.SubmitButton.Size = New System.Drawing.Size(420, 63)
-        Me.SubmitButton.TabIndex = 2
-        Me.SubmitButton.Text = "Submit &Answer"
-        Me.SubmitButton.UseVisualStyleBackColor = True
-        '
-        'SummaryButton
-        '
-        Me.SummaryButton.Location = New System.Drawing.Point(22, 304)
-        Me.SummaryButton.Name = "SummaryButton"
-        Me.SummaryButton.Size = New System.Drawing.Size(420, 63)
-        Me.SummaryButton.TabIndex = 3
-        Me.SummaryButton.Text = "Create &Summary"
-        Me.SummaryButton.UseVisualStyleBackColor = True
-        '
         'ProblemTypeGroupBox
         '
         Me.ProblemTypeGroupBox.Controls.Add(Me.SubtractionRadioButton)
@@ -274,6 +181,112 @@ Partial Class MathContestForm
         Me.ProblemTypeGroupBox.TabIndex = 11
         Me.ProblemTypeGroupBox.TabStop = False
         Me.ProblemTypeGroupBox.Text = "Problem Type"
+        '
+        'ExitButton
+        '
+        Me.ExitButton.Location = New System.Drawing.Point(22, 382)
+        Me.ExitButton.Name = "ExitButton"
+        Me.ExitButton.Size = New System.Drawing.Size(420, 63)
+        Me.ExitButton.TabIndex = 4
+        Me.ExitButton.Text = "Finish and E&xit"
+        Me.ExitButton.UseVisualStyleBackColor = True
+        '
+        'SummaryButton
+        '
+        Me.SummaryButton.Location = New System.Drawing.Point(22, 304)
+        Me.SummaryButton.Name = "SummaryButton"
+        Me.SummaryButton.Size = New System.Drawing.Size(420, 63)
+        Me.SummaryButton.TabIndex = 3
+        Me.SummaryButton.Text = "Create &Summary"
+        Me.SummaryButton.UseVisualStyleBackColor = True
+        '
+        'SubmitButton
+        '
+        Me.SubmitButton.Location = New System.Drawing.Point(22, 227)
+        Me.SubmitButton.Name = "SubmitButton"
+        Me.SubmitButton.Size = New System.Drawing.Size(420, 63)
+        Me.SubmitButton.TabIndex = 2
+        Me.SubmitButton.Text = "Submit &Answer"
+        Me.SubmitButton.UseVisualStyleBackColor = True
+        '
+        'OperationLabel
+        '
+        Me.OperationLabel.AutoSize = True
+        Me.OperationLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.OperationLabel.Location = New System.Drawing.Point(118, 88)
+        Me.OperationLabel.Name = "OperationLabel"
+        Me.OperationLabel.Size = New System.Drawing.Size(27, 29)
+        Me.OperationLabel.TabIndex = 9
+        Me.OperationLabel.Text = "+"
+        Me.OperationLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'Label6
+        '
+        Me.Label6.AutoSize = True
+        Me.Label6.Location = New System.Drawing.Point(246, 88)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(24, 25)
+        Me.Label6.TabIndex = 11
+        Me.Label6.Text = "="
+        '
+        'AnswerBox
+        '
+        Me.AnswerBox.Location = New System.Drawing.Point(314, 88)
+        Me.AnswerBox.Name = "AnswerBox"
+        Me.AnswerBox.Size = New System.Drawing.Size(91, 31)
+        Me.AnswerBox.TabIndex = 1
+        Me.AnswerBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        '
+        'FirstNumberLabel
+        '
+        Me.FirstNumberLabel.AutoSize = True
+        Me.FirstNumberLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.FirstNumberLabel.Location = New System.Drawing.Point(31, 88)
+        Me.FirstNumberLabel.MinimumSize = New System.Drawing.Size(60, 0)
+        Me.FirstNumberLabel.Name = "FirstNumberLabel"
+        Me.FirstNumberLabel.Size = New System.Drawing.Size(60, 29)
+        Me.FirstNumberLabel.TabIndex = 13
+        Me.FirstNumberLabel.Text = "0"
+        Me.FirstNumberLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'SecondNumberLabel
+        '
+        Me.SecondNumberLabel.AutoSize = True
+        Me.SecondNumberLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.SecondNumberLabel.Location = New System.Drawing.Point(164, 88)
+        Me.SecondNumberLabel.MinimumSize = New System.Drawing.Size(60, 0)
+        Me.SecondNumberLabel.Name = "SecondNumberLabel"
+        Me.SecondNumberLabel.Size = New System.Drawing.Size(60, 29)
+        Me.SecondNumberLabel.TabIndex = 14
+        Me.SecondNumberLabel.Text = "0"
+        Me.SecondNumberLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'AnswerLabel
+        '
+        Me.AnswerLabel.AutoSize = True
+        Me.AnswerLabel.Location = New System.Drawing.Point(281, 56)
+        Me.AnswerLabel.Name = "AnswerLabel"
+        Me.AnswerLabel.Size = New System.Drawing.Size(163, 25)
+        Me.AnswerLabel.TabIndex = 15
+        Me.AnswerLabel.Text = "Student Answer"
+        '
+        'GroupBox2
+        '
+        Me.GroupBox2.Controls.Add(Me.AnswerLabel)
+        Me.GroupBox2.Controls.Add(Me.SecondNumberLabel)
+        Me.GroupBox2.Controls.Add(Me.FirstNumberLabel)
+        Me.GroupBox2.Controls.Add(Me.AnswerBox)
+        Me.GroupBox2.Controls.Add(Me.Label6)
+        Me.GroupBox2.Controls.Add(Me.OperationLabel)
+        Me.GroupBox2.Controls.Add(Me.SubmitButton)
+        Me.GroupBox2.Controls.Add(Me.SummaryButton)
+        Me.GroupBox2.Controls.Add(Me.ExitButton)
+        Me.GroupBox2.Location = New System.Drawing.Point(495, 12)
+        Me.GroupBox2.Name = "GroupBox2"
+        Me.GroupBox2.Size = New System.Drawing.Size(461, 462)
+        Me.GroupBox2.TabIndex = 1
+        Me.GroupBox2.TabStop = False
+        Me.GroupBox2.Text = "Math Problem"
         '
         'MathContestForm
         '
@@ -291,10 +304,10 @@ Partial Class MathContestForm
         Me.Text = "Math Contest"
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
-        Me.GroupBox2.ResumeLayout(False)
-        Me.GroupBox2.PerformLayout()
         Me.ProblemTypeGroupBox.ResumeLayout(False)
         Me.ProblemTypeGroupBox.PerformLayout()
+        Me.GroupBox2.ResumeLayout(False)
+        Me.GroupBox2.PerformLayout()
         Me.ResumeLayout(False)
 
     End Sub
@@ -303,9 +316,7 @@ Partial Class MathContestForm
     Friend WithEvents Label2 As Windows.Forms.Label
     Friend WithEvents Label1 As Windows.Forms.Label
     Friend WithEvents NameTextBox As Windows.Forms.TextBox
-    Friend WithEvents GroupBox2 As Windows.Forms.GroupBox
     Friend WithEvents Label3 As Windows.Forms.Label
-    Friend WithEvents ExitButton As Windows.Forms.Button
     Friend WithEvents MultiplicationRadioButton As Windows.Forms.RadioButton
     Friend WithEvents SubtractionRadioButton As Windows.Forms.RadioButton
     Friend WithEvents DivisionRadioButton As Windows.Forms.RadioButton
@@ -313,12 +324,16 @@ Partial Class MathContestForm
     Friend WithEvents AgeTextBox As Windows.Forms.TextBox
     Friend WithEvents GradeTextBox As Windows.Forms.TextBox
     Friend WithEvents ClearButton As Windows.Forms.Button
-    Friend WithEvents Label6 As Windows.Forms.Label
-    Friend WithEvents MathLabel As Windows.Forms.Label
-    Friend WithEvents SubmitButton As Windows.Forms.Button
-    Friend WithEvents SummaryButton As Windows.Forms.Button
-    Friend WithEvents AnswerBox As Windows.Forms.TextBox
     Friend WithEvents ProblemTypeGroupBox As Windows.Forms.GroupBox
-    Friend WithEvents SecondNumberLabel As Windows.Forms.Label
+    Friend WithEvents MathContestToolTip As Windows.Forms.ToolTip
+    Friend WithEvents ExitButton As Windows.Forms.Button
+    Friend WithEvents SummaryButton As Windows.Forms.Button
+    Friend WithEvents SubmitButton As Windows.Forms.Button
+    Friend WithEvents OperationLabel As Windows.Forms.Label
+    Friend WithEvents Label6 As Windows.Forms.Label
+    Friend WithEvents AnswerBox As Windows.Forms.TextBox
     Friend WithEvents FirstNumberLabel As Windows.Forms.Label
+    Friend WithEvents SecondNumberLabel As Windows.Forms.Label
+    Friend WithEvents AnswerLabel As Windows.Forms.Label
+    Friend WithEvents GroupBox2 As Windows.Forms.GroupBox
 End Class
